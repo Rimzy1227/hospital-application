@@ -991,7 +991,8 @@ footer {
 
     .doctor-grid {
        /*grid-template-columns: 1fr;*/
-       grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+       display: flex;
+       flex-direction: column;
     }
 
     .branch{
