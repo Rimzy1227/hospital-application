@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo-wrapper">
+                <a href="index.html" class="logo"></a>
+                <h1>Gotham Hospital</h1>
+            </div>  
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservation.html">Consulting Reservation</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pharmacy</h1>
+        <section id="pharmacy-form">
+            <h2>Purchase Medicine</h2>
+            <form action="#" method="post">
+                <label for="medicine">Select Medicine:</label>
+                <select name="medicine" id="medicine" required>
+                    <option value="med1">Medicine 01</option>
+                    <option value="med2">Medicine 02</option>
+                    <option value="med3">Medicine 03</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="address"> Delivery Address:</label>
+                <textarea name="address" id="address" rows="3"></textarea>
+
+                <button type="submit">Order Medicine</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
