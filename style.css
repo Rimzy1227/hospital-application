@@ -832,19 +832,7 @@ footer {
         text-align: left; /* Aligns text to the left */
     }
 
-    /* Adds labels before table cells */
-    table tbody td::before {
-        content: attr(data-label); /* Uses attribute data-label for cell label */
-        font-weight: bold; /* Makes label text bold */
-        position: absolute; /* Positions label absolutely */
-        left: 0; /* Aligns label to the left */
-        top: 0; /* Aligns label to the top */
-        padding: 10px; /* Adds padding to label */
-        white-space: nowrap; /* Prevents label from breaking into multiple lines */
-        background: #f4f4f4; /* Sets background color for label */
-        border-right: 1px solid #ddd; /* Adds border to the right of label */
-        color: #004080; /* Sets text color for label */
-    }
+    
 }
 
 /* Media query for screens up to 768px wide */
