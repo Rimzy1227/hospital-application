@@ -802,9 +802,11 @@ footer {
     table {
         display: block; /* Changes table layout to block */
         overflow-x: auto; /* Adds horizontal scroll if needed */
-        white-space: nowrap; /* Prevents table from breaking into multiple lines */
+        /*white-space: nowrap; /* Prevents table from breaking into multiple lines */
         border: 1px solid #474747; /* Adds border to table */
         background-color: aliceblue; /* Sets background color */
+        block-size: auto
+
     }
 
     /* Hide table headers on small screens */
@@ -816,7 +818,8 @@ footer {
     table tbody tr {
         display: block; /* Changes table row layout to block */
         margin-bottom: 10px; /* Adds margin below each row */
-        border-bottom: 1px solid #3d3d3d; /* Adds border below rows */
+    
+        /*border-bottom : 1px solid #c4c2c2; /* Adds border below rows */
         position: relative; /* Allows for absolute positioning of table cells */
     }
 
@@ -824,12 +827,24 @@ footer {
     table tbody td {
         display: block; /* Changes table cell layout to block */
         padding: 10px; /* Adds padding inside cells */
-        border: none; /* Removes border from cells */
+        border:none; /* Removes border from cells */
         position: relative; /* Allows for absolute positioning of pseudo-elements */
-        text-align: left; /* Aligns text to the left */
+        text-align: center; /* Aligns text to the left */
+        width: 100%;
     }
 
-    
+    /* Adds labels before table cells */
+    table tbody td::before {
+        font-weight: bold; /* Makes label text bold */
+        position: absolute; /* Positions label absolutely */
+        left: 0; /* Aligns label to the left */
+        top: 0; /* Aligns label to the top */
+        padding: 10px; /* Adds padding to label */
+        white-space: nowrap; /* Prevents label from breaking into multiple lines */
+        background: #f4f4f4; /* Sets background color for label */
+        border-right: 1px solid #ddd; /* Adds border to the right of label */
+        color: #004080; /* Sets text color for label */
+    }
 }
 
 /* Media query for screens up to 768px wide */
