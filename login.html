@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Login</title>
+    <!-- Link to external CSS stylesheet for styling the page -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icons for different devices and browsers -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
@@ -12,12 +14,15 @@
 </head>
 <body>
     <header>
+        <!-- Navigation bar for the website -->
         <nav>
             <div class="logo-wrapper">
+                <!-- Placeholder for logo, currently not used -->
                 <a href="index.html" class="logo"></a>
                 <h1>Gotham Hospital</h1>
             </div>  
             <ul>
+                <!-- List of navigation links -->
                 <li><a href="login.html">Login</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -28,23 +33,58 @@
             </ul>
         </nav>
     </header>
+    
     <main>
+        <!-- Main content area for the login page -->
         <h1>Hospital Application Login</h1>
         <div class="login-container">
             <h2>Login</h2>
+            <!-- Login form for user authentication -->
             <form action="/login" method="post">
+                <!-- Form group for username input -->
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
+                <!-- Form group for password input -->
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
+                <!-- Submit button for the form -->
                 <button type="submit">Login</button>
             </form>
         </div>
     </main>
+
+    <footer>
+        <!-- Footer section with information and links -->
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a dedicated hospital providing top-notch healthcare services with a compassionate approach. Our team is here to ensure the best possible care for every patient.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <!-- Contact information -->
+                <p><i class="fa fa-phone"></i> +110 221 1227</p>
+                <p><i class="fa fa-envelope"></i> info@gothamhospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 230 Private Drive Colombo</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <!-- List of quick links for easy navigation -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Patient Care</a></li>
+                    <li><a href="reservation.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Gotham Hospital. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>

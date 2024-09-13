@@ -1,701 +1,404 @@
-/*body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(194, 223, 223);
-    border: 10px solid black;
-    border-radius: 10px;
-}
-
-header{
-    background-color: rgb(151, 214, 223);
-}
-
-.logo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.logo-wrapper h1 {
-    font-size: 3rem;
-    margin: 0 0 0 1rem;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/017/177/954/small/round-medical-cross-symbol-on-transparent-background-free-png.png);
-    background-size: cover;
-    margin-left: 2rem;
-}
-
-nav { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #3a3333;
-    text-decoration: none;
-}
-
-main {
-    padding: 2rem;
-}
-
-h1, h2, h3 {
-    color: #272626;
-}
-
-.responsive-image {
-    width: 100%;
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse; 
-    border: #3b3b3b;
-    margin: 20px 0; 
-    font-family: Arial, sans-serif; 
-}
-
-thead th {
-    background-color: #f4f4f4; 
-    color: #3b3b3b;
-    padding: 12px;
-    border-bottom: 2px solid #e6e2e2;
-    text-align: left; 
-}
-
-
-tbody td {
-    background-color: #fdfcfc;
-    color: #3f3e3e; 
-    padding: 12px; 
-    border-bottom: 1px solid #d1d0d0;
-}
-
-
-
-caption {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-
-#service-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.service-item {
-    flex: 1 1 30%;
-    margin: 1rem;
-}
-
-.doctor-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
- 
-.doctor-grid #card1 { grid-area: 1 / 1 / 2 / 2; }
-.doctor-grid #card2 { grid-area: 1 / 2 / 2 / 3; }
-.doctor-grid #card3 { grid-area: 1 / 3 / 2 / 4; }
-.doctor-grid #card4 { grid-area: 2 / 1 / 3 / 2; }
-.doctor-grid #card5 { grid-area: 2 / 2 / 3 / 3; }
-.doctor-grid #card6 { grid-area: 2 / 3 / 3 / 4; }
-.doctor-grid #card7 { grid-area: 3 / 1 / 4 / 2; }
-.doctor-grid #card8 { grid-area: 3 / 2 / 4 / 3; }
-.doctor-grid #card9 { grid-area: 3 / 3 / 4 / 4; }
-
-.doctor-card {
-    background:rgb(165, 165, 190);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align:center;
-}
-
-.doctor-card img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 0.5rem 0;
-}
-
-form input, form select, form textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #d4c5c5;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 0.75rem;
-    background-color: #686565;
-    color: #dbd1d1;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #8f8a8a;
-}
-
-#registration-link {
-    display: flex;
-    justify-content: center;
-}
-
-#registration-link a {
-    padding: .7rem 1rem;
-    background-color: aqua;
-    border-radius: .6rem;
-    text-decoration: none;
-    color: #3a3333;
-    transition: .4s ease;
-}
-
-#registration-link a:hover {
-    background-color: rgb(0, 102, 255);
-    color: #ccc;
-}
-
-footer {
-    background-color: #fc2313;
-    padding: 3px;
-    text-align: center;
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-    #service-images {
-        flex-direction: column;
-    }
-
-    .service-item {
-        flex: 1 1 100%;
-    }
-}
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2, h3 {
-        font-size: 1.5rem;
-    }
-
-    p, li, label {
-        font-size: 1rem;
-    }
-}
-@media (max-width: 768px) {
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-
-    .logo-wrapper h1 {
-        font-size: 2rem;
-    }
-}
-@media (max-width: 768px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}*/
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-image: url();
-    background-color: #c6f5f5;
+    font-family: Arial, sans-serif; /* Default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Default text color */
+    background-color: #c6f5f5; /* Background color for the body */
 }
 
-h1{
-    margin: 10px 0;
-    text-align: center;
-    
+h1 {
+    margin: 10px 0; /* Margin for top and bottom of h1 */
+    text-align: center; /* Center align h1 text */
 }
 
 h2, h3, h4, h5, h6 {
-    margin: 10px 0;
+    margin: 10px 0; /* Margin for all heading elements */
 }
 
 p {
-    margin: 10px 0;
+    margin: 10px 0; /* Margin for paragraphs */
 }
 
 a {
-    color: #008cba;
-    text-decoration: none;
+    color: #008cba; /* Link color */
+    text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
-    text-decoration:solid;
+    text-decoration: solid; /* Underline links on hover */
 }
 
 /* Header and Navigation */
 header {
-    background: #008cba;
-    color: #fff;
-    padding: 10px 0;
-    background-size:cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-image: url(https://static.vecteezy.com/system/resources/previews/004/987/898/non_2x/doctor-in-medical-lab-coat-with-a-stethoscope-doctor-in-hospital-background-with-copy-space-low-poly-wireframe-vector.jpg);
+    background: #008cba; /* Background color for header */
+    color: #fff; /* Text color in header */
+    padding: 10px 0; /* Padding inside header */
+    background-size: cover; /* Cover the entire header area with background image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/987/898/non_2x/doctor-in-medical-lab-coat-with-a-stethoscope-doctor-in-hospital-background-with-copy-space-low-poly-wireframe-vector.jpg); /* Header background image */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    
+    display: flex; /* Flexbox for navigation layout */
+    justify-content: space-between; /* Space between navigation items */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Max width for navigation */
+    margin: 0 auto; /* Center navigation */
+    padding: 0 20px; /* Padding inside navigation */
 }
+
 .logo-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    display: flex; /* Flexbox for logo wrapper */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .logo-wrapper h1 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: bold;
-    
+    margin: 0; /* Remove margin from h1 */
+    font-size: 30px; /* Font size for logo text */
+    font-weight: bold; /* Bold font weight */
 }   
 
 .logo {
-    width: 200px;
-    height: 150px;
-    background-image: url(Images/logo.png);
-    /*background-image: url(https://static.vecteezy.com/system/resources/thumbnails/017/177/954/small/round-medical-cross-symbol-on-transparent-background-free-png.png);*/
-    background-size:cover;
-    margin-left: 2rem;
+    width: 200px; /* Width of logo */
+    height: 150px; /* Height of logo */
+    background-image: url(Images/logo.png); /* Logo image */
+    background-size: cover; /* Cover the logo container with the image */
+    margin-left: 2rem; /* Margin to the left of the logo */
 }
-
-/*nav { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}*/
-
-/*nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
-
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #3a3333;
-    text-decoration: none;
-}*/
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for navigation items */
+    gap: 20px; /* Space between items */
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0; /* Remove margin from list items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Link color */
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 nav ul li a:hover {
-    color: #131212;
-    background-color: #f4f4f4;
-    border-radius: 4px;
-    margin: auto;
-    border: 1px #3f3f3f;
-    box-shadow: 5px 10px 15px rgba(36, 36, 36, 0.575);
-    transform: translate3d(15px);
-    transition: 0.3s;
-    padding: 0.1rem;
-
+    color: #131212; /* Dark color on hover */
+    background-color: #f4f4f4; /* Light background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+    margin: auto; /* Center alignment on hover */
+    border: 1px #3f3f3f; /* Border on hover */
+    box-shadow: 5px 10px 15px rgba(36, 36, 36, 0.575); /* Shadow on hover */
+    transform: translate3d(15px); /* Shift position on hover */
+    transition: 0.3s; /* Smooth transition */
+    padding: 0.1rem; /* Padding on hover */
 }
-
-/*
-ul {
-    list-style: none;
-    display: flex;
-    
-}
-
-ul li {
-    margin-left: 20px;
-}
-
-ul li a {
-    color: #fff;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-ul li a:hover {
-    background: #005f7a;
-}*/
 
 /* Main Content */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    max-width: 1200px; /* Max width for main content */
+    margin: 20px auto; /* Center main content */
+    padding: 0 20px; /* Padding inside main content */
 }
-
-
 
 /* Intro Section */
 #intro {
-    text-align: center;
-    margin-bottom: 40px;
-    
+    text-align: center; /* Center text in intro section */
+    margin-bottom: 40px; /* Margin at bottom of intro section */
 }
 
-.sub-section{
-    border: 3px solid black;
-    border-radius: 12px;
-    display: grid;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575);
-    background-color: #93daf7;
-    
+/* Sub-section styles */
+.sub-section {
+    border: 3px solid black; /* Border for sub-section */
+    border-radius: 12px; /* Rounded corners */
+    display: grid; /* Grid layout for sub-section */
+    justify-self: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Center text */
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575); /* Shadow effect */
+    background-color: #93daf7; /* Background color */
 }
 
-.sub-section03{
-    border: 3px solid black;
-    border-radius: 12px;
-    display: grid;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575);
-    background-color: #93daf7;
+.sub-section03 {
+    border: 3px solid black; /* Border for sub-section03 */
+    border-radius: 12px; /* Rounded corners */
+    display: grid; /* Grid layout for sub-section03 */
+    justify-self: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Center text */
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575); /* Shadow effect */
+    background-color: #93daf7; /* Background color */
 }
 
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Hero Container */
+.hero-container {
+    position: relative; /* Relative positioning for overlay */
+    height: 70vh; /* Height of hero section */
+    background-image: url(https://wallpapers.com/images/hd/cool-medical-and-health-symbols-yk9ofybop75souw0.jpg); /* Background image */
+    background-size: cover; /* Cover the entire hero container */
+    background-position: center; /* Center background image */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Shadow effect */
+}
+
+.hero-container:hover {
+    transform: translate3d(10px); /* Shift position on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+    transform: scale(110%); /* Scale up on hover */
+    transition: 0.3s; /* Smooth transition */
+}
+
+/* Overlay (Optional, for darkening the background image) */
+.hero-container::before {
+    content: ''; /* No text content */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top edge of container */
+    left: 0; /* Left edge of container */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Shadow effect */
+}
+
+.hero-container::before:hover {
+    transform: translate3d(10px); /* Shift position on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+    transform: scale(110%); /* Scale up on hover */
+    transition: 0.3s; /* Smooth transition */
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative; /* Relative positioning */
+    z-index: 2; /* Stack above the overlay */
+    max-width: 800px; /* Max width of content */
+    padding: 20px; /* Padding inside content */
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Font size for hero heading */
+    margin-bottom: 20px; /* Margin at bottom of heading */
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Font size for hero paragraph */
+    margin-bottom: 30px; /* Margin at bottom of paragraph */
+}
+
+.cta-button {
+    padding: 15px 30px; /* Padding inside button */
+    background-color: #348bd1; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.cta-button:hover {
+    background-color: #007bb5; /* Darker background color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #008cba; /* Background color for footer */
+    color: #fff; /* Text color in footer */
+    padding: 20px 0; /* Padding inside footer */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Margin at top */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+footer p {
+    margin: 0; /* Remove margin from paragraph */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
     
-  }
-  
-  /* Hero Container */
-  .hero-container {
-    position: relative;
-    height: 70vh;
-    background-image: url(https://wallpapers.com/images/hd/cool-medical-and-health-symbols-yk9ofybop75souw0.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
-  }
-
-  .hero-container:hover{
-    transform: translate3d(10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-  }
-  
-  /* Overlay (Optional, for darkening the background image) */
-  .hero-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */   
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
-  }
-
-  .hero-container::before:hover{
-    transform: translate3d(10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-  }
-  
-  /* Hero Content */
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 20px;
-  }
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    padding: 15px 30px;
-    background-color: #348bd1;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #40ffff;
-    transform: translate3d(10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-    
-
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
     .hero-content h1 {
-      font-size: 2.5rem;
+        font-size: 3rem; /* Reduce font size for hero heading on small screens */
     }
-  
+    
     .hero-content p {
-      font-size: 1.2rem;
-    }
-  
-    .cta-button {
-      font-size: 1rem;
-      padding: 10px 20px;
+        font-size: 1.2rem; /* Reduce font size for hero paragraph on small screens */
+
+
+        padding: 10px 20px; /* Padding: 10px top and bottom, 20px left and right */
     }
   }
   
 
-.hero-image{
-    width: 90%;
-    height: 70vh;
-    border-radius: 10px;
-    margin: 0 auto;
-    object-fit: cover;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
+/* Style for hero image with responsive width and height */
+.hero-image {
+    width: 90%; /* Sets the width to 90% of the parent container */
+    height: 70vh; /* Sets the height to 70% of the viewport height */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the element horizontally */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
 }
 
-.hero-image:hover{
-    transform: translate3d(10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-    
+/* Hover effect for the hero image */
+.hero-image:hover {
+    transform: translate3d(10px); /* Moves the image 10px to the right */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the image by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
 }
 
+/* Style for responsive images */
 .responsive-image {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #3a3333;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
-    border: 5px solid white;
-   
+    width: 100%; /* Ensures the image takes up full width of its container */
+    height: auto; /* Maintains aspect ratio based on width */
+    max-width: 500px; /* Limits the maximum width to 500px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the image horizontally */
+    background-color: #3a3333; /* Sets a background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
+    border: 5px solid white; /* Adds a white border with 5px width */
 }
 
-.responsive-image:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
+/* Hover effect for responsive images */
+.responsive-image:hover {
+    transform: translate3d(10px); /* Moves the image 10px to the right */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the image by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
 }
 
-.responsive-image03{
-    width: 100%;
-    height: 80%;
-    max-width: 500px;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #3a3333;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
-    border: 5px solid white;
+/* Additional responsive image styling */
+.responsive-image03 {
+    width: 100%; /* Ensures the image takes up full width of its container */
+    height: 80%; /* Sets the height to 80% of the container's height */
+    max-width: 500px; /* Limits the maximum width to 500px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the image horizontally */
+    background-color: #3a3333; /* Sets a background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
+    border: 5px solid white; /* Adds a white border with 5px width */
 }
 
-
-
-.responsive-image03:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
+/* Hover effect for the additional responsive image */
+.responsive-image03:hover {
+    transform: translate3d(10px); /* Moves the image 10px to the right */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the image by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
 }
 
-/*
-#lists{
-    border: 3px solid black;
-    border-radius: 12px;
-    display: grid;
-    justify-self: center;
-    align-items: center;
-    text-align: center;  
-}*/
-
-/*.sub-section {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 2rem;
-}*/
-
-.branch{
-    border: 3px solid black;
-    border-radius: 12px;
-    display:grid;
-    justify-self:center;   
-    align-items:center;
-    text-align:center;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575);
-    background-color: #97f385;
-    background-size: cover;
-    background-image: url(https://media.istockphoto.com/id/1165997279/vector/hospital-blurred-background-medical-backdrop-with-molecules-blur-interior-inside-building.jpg?s=612x612&w=0&k=20&c=MB1COYmM2P9hBpjLRSMrXlLMP-2dnEQCWp6_l9xbO1k=);
+/* Style for branches with background image */
+.branch {
+    border: 3px solid black; /* Adds a black border with 3px width */
+    border-radius: 12px; /* Rounds corners with a 12px radius */
+    display: grid; /* Uses CSS Grid layout */
+    justify-self: center; /* Centers the item within its grid cell horizontally */
+    align-items: center; /* Centers content vertically within the grid cell */
+    text-align: center; /* Centers text horizontally */
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
+    background-color: #97f385; /* Sets a background color */
+    background-size: cover; /* Ensures background image covers the entire area */
+    background-image: url(https://media.istockphoto.com/id/1165997279/vector/hospital-blurred-background-medical-backdrop-with-molecules-blur-interior-inside-building.jpg?s=612x612&w=0&k=20&c=MB1COYmM2P9hBpjLRSMrXlLMP-2dnEQCWp6_l9xbO1k=); /* Sets a background image */
 }
 
-.map{
-    border-radius: 2px;
-    border: 2px solid #141414;
-    max-width: 500px;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #3a3333;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575);
+/* Style for maps */
+.map {
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    border: 2px solid #141414; /* Adds a border with 2px width */
+    max-width: 500px; /* Limits the maximum width to 500px */
+    margin: 0 auto; /* Centers the map horizontally */
+    background-color: #3a3333; /* Sets a background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
 }
 
-.map:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.4s;
+/* Hover effect for maps */
+.map:hover {
+    transform: translateY(-10px); /* Moves the map 10px up */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the map by 10% */
+    transition: 0.4s; /* Smooth transition for hover effects */
 }
 
-/* Services Section */
-/*#service-intro {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#service-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 1px solid #292929;
-    max-width: 500px;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-.service-item {
-    flex-basis: calc(33.333% - 20px);
-    margin: 10px;
-    text-align: center;
-}*/
-
+/* Styles for the service intro section */
 #service-intro {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 40px; /* Adds 40px margin below the section */
 }
 
+/* Styles for the container holding service images */
 #service-images {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 40px;
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    flex-direction: column; /* Aligns items in a column */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Adds 20px gap between items */
+    margin-bottom: 40px; /* Adds 40px margin below the section */
 }
 
+/* Styles for service images */
+.service01 {
+    max-width: 500px; /* Limits the maximum width to 500px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the image horizontally */
+    background-color: #3a3333; /* Sets a background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.575); /* Adds a shadow with slight blur */
+    border: 5px solid white; /* Adds a white border with 5px width */
+}
+
+/* Hover effect for service images */
+.service01:hover {
+    transform: translate3d(10px); /* Moves the image 10px to the right */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the image by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Styles for individual service items */
 .service-item {
-    flex: 1 1 45%;
-    text-align: center;
+    flex: 1 1 45%; /* Allows the item to grow and shrink with a base size of 45% */
+    text-align: center; /* Centers text horizontally */
 }
 
+/* Styles for service item images */
 .service-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensures the image does not exceed container width */
+    border-radius: 8px; /* Rounds corners with an 8px radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-/* Doctors Section */
+/* Styles for the doctor grid section */
 .doctor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: grid; /* Uses CSS Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Adds 20px gap between grid items */
 }
 
+/* Grid area definitions for doctor cards */
 .doctor-grid #card1 { grid-area: 1 / 1 / 2 / 2; }
 .doctor-grid #card2 { grid-area: 1 / 2 / 2 / 3; }
 .doctor-grid #card3 { grid-area: 1 / 3 / 2 / 4; }
@@ -706,342 +409,467 @@ main {
 .doctor-grid #card8 { grid-area: 3 / 2 / 4 / 3; }
 .doctor-grid #card9 { grid-area: 3 / 3 / 4 / 4; }
 
-
+/* Styles for doctor cards */
 .doctor-card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #f4f4f4; /* Sets background color */
+    padding: 20px; /* Adds 20px padding inside the card */
+    border-radius: 8px; /* Rounds corners with an 8px radius */
+    text-align: center; /* Centers text horizontally */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and shadow */
 }
 
+/* Styles for doctor card images */
 .doctor-card img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-
-    
+    width: 200px; /* Sets image width to 200px */
+    height: 200px; /* Sets image height to 200px */
+    border-radius: 100%; /* Makes image circular */
+    filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
+    transition: all 0.7s ease; /* Smooth transition for all properties */
 }
-/*
-.doc-img1:hover{
-    transform: scale(200%);
-    transition: 0.3s;
-}*/
 
+/* Hover effect for doctor card images */
+.doctor-card img:hover {
+    transform: scale(1.1); /* Scales up the image by 10% */
+    border-radius: 20px; /* Changes border radius to 20px on hover */
+}
+
+/* Styles for doctor card headings */
 .doctor-card h3 {
-    margin: 10px 0;
+    margin: 10px 0; /* Adds 10px margin above and below headings */
 }
 
+/* Hover effect for doctor cards */
 .doctor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(125%);
-    transition: 0.5s;
+    transform: translateY(-10px); /* Moves the card 10px up */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(125%); /* Scales up the card by 25% */
+    transition: 0.5s; /* Smooth transition for hover effects */
 }
 
-/* Table Styles */
+/* Styles for tables */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    background-color: aliceblue; /* Sets a light blue background color */
+    width: 100%; /* Ensures the table takes up full width of its container */
+    border-collapse: collapse; /* Collapses table borders */
+    margin: 20px 0; /* Adds 20px margin above and below the table */
 }
 
+/* Styles for table headers */
 table thead {
-    background-color: #004080;
-    color: #fff;
+    background-color: #004080; /* Sets background color for thead */
+    color: #fff; /* Sets text color to white */
 }
 
 table th, table td {
-    border: 1px solid #6e6e6e;
-    padding: 15px;
-    text-align: left;
+    border: 1px solid #6e6e6e; /* Adds a border with gray color */
+    padding: 15px; /* Adds 15px padding inside table cells */
+    text-align: center; /* Centers text horizontally */
 }
 
 table th {
-    background: #008cba;
-    color: #dde2e0;
+    background: #008cba; /* Sets background color for th */
+    color: #dde2e0; /* Sets text color for th */
 }
 
+/* Alternating row colors for table body */
 table tbody tr:nth-child(even) {
-    background: #f4f4f4;
+    background: #f4f4f4; /* Sets background color for even rows */
 }
 
+/* Styles for forms */
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
 }
 
+/* Styles for form labels */
 form label {
-    margin: 0.5rem 0;
-    font: bold;
-    
-
+    margin: 0.5rem 0; /* Adds 0.5rem margin above and below labels */
+    font: bold; /* Makes font bold */
 }
 
+/* Styles for form inputs, selects, and textareas */
 form input, form select, form textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #8d8d8d;
-    border-radius: 4px;
-    width: 50%;
-    background-color: #b8b7b7;
-    justify-content: center;
-    align-items: center;
+    padding: 0.5rem; /* Adds 0.5rem padding inside form elements */
+    margin-bottom: 1rem; /* Adds 1rem margin below each form element */
+    border: 1px solid #8d8d8d; /* Adds a border with gray color */
+    border-radius: 4px; /* Rounds corners with a 4px radius */
+    width: 50%; /* Sets the width to 50% of the container */
+    background-color: #b8b7b7; /* Sets a background color */
+    justify-content: center; /* Centers content horizontally (applies to form container) */
+    align-items: center; /* Centers content vertically (applies to form container) */
 }
 
-form input:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-    border: 1px solid black
+
+/* Hover effects for form inputs, selects, and textareas */
+form input:hover, form select:hover, form textarea:hover {
+    transform: translate3d(10px); /* Moves the element 10px to the right */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the element by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
+    border: 1px solid black; /* Changes border color to black on hover */
 }
 
-form select:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-    border: 1px solid black
-}
-
-form textarea:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-    border: 1px solid black
-}
-
+/* Styles for form buttons */
 form button {
-    padding: 0.75rem;
-    background-color: #686565;
-    color: #dbd1d1;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    
+    padding: 0.75rem; /* Adds 0.75rem padding inside the button */
+    background-color: #686565; /* Sets background color */
+    color: #dbd1d1; /* Sets text color */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Rounds corners with an 8px radius */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    width: 50%; /* Sets the button width to 50% of the container */
+    align-items: center; /* Centers items horizontally (applies to button container) */
+    justify-content: center; /* Centers items vertically (applies to button container) */
+    margin: 0; /* Removes default margin */
 }
 
+/* Hover effect for form buttons */
 form button:hover {
-    background-color: #2761ce;
-    transform: translate3d(10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
+    background-color: #2761ce; /* Changes background color on hover */
+    transform: translate3d(10px); /* Moves the button 10px to the right */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
+    transform: scale(110%); /* Scales up the button by 10% */
+    transition: 0.3s; /* Smooth transition for hover effects */
 }
 
+/* Styles for registration link */
 #registration-link {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    
+    margin: auto; /* Centers the link container horizontally */
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    width: auto; /* Adjusts width based on content */
 }
 
+/* Styles for registration link anchor */
 #registration-link a {
-    padding: .7rem 1rem;
-    background-color: aqua;
-    border-radius: .6rem;
-    text-decoration: none;
-    color: #202020;
-    transition: .4s ease;
-
+    padding: .7rem 1rem; /* Adds padding inside the link */
+    background-color: aqua; /* Sets background color */
+    border-radius: .6rem; /* Rounds corners with a 0.6rem radius */
+    text-decoration: none; /* Removes underline from link */
+    color: #202020; /* Sets text color */
+    transition: .4s ease; /* Smooth transition for hover effects */
 }
 
+/* Hover effect for registration link anchor */
 #registration-link a:hover {
-    background-color: rgb(0, 101, 253);
-    color: #dadedf;
+    background-color: rgb(0, 101, 253); /* Changes background color on hover */
+    color: #dadedf; /* Changes text color on hover */
 }
 
-#pharmacy-form{
-    /*background-image: url(https://watermark.lovepik.com/photo/40167/9052.jpg_wh1200.jpg);*/
-    background-color: rgb(120, 233, 180);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #292929;
-    max-width: 700px;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: .7rem;
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-
-
+/* Styles for pharmacy form */
+#pharmacy-form {
+    background-color: rgb(218, 240, 229); /* Sets background color */
+    justify-content: center; /* Centers content horizontally (applies to form container) */
+    align-items: center; /* Centers content vertically (applies to form container) */
+    text-align: center; /* Centers text */
+    border: 1px solid #292929; /* Adds a border with dark gray color */
+    max-width: 700px; /* Limits the maximum width to 700px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the form container horizontally */
+    padding: .7rem; /* Adds padding inside the form */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow with slight blur */
+    filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
+    border: 5px solid white; /* Adds a white border with 5px width */
+    background-size: cover; /* Ensures background image covers the entire area */
+    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
 }
 
-/*#pharmacy-form:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-}*/
 
-#reservation-form{
-    background-color: rgb(120, 233, 180);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #292929;
-    max-width: 700px;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: .7rem;  
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); 
 
+/* Styles for reservation form */
+#reservation-form {
+    background-color: rgb(218, 240, 229); /* Sets background color */
+    justify-content: center; /* Centers content horizontally (applies to form container) */
+    align-items: center; /* Centers content vertically (applies to form container) */
+    text-align: center; /* Centers text */
+    border: 1px solid #292929; /* Adds a border with dark gray color */
+    max-width: 700px; /* Limits the maximum width to 700px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the form container horizontally */
+    padding: .7rem; /* Adds padding inside the form */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow with slight blur */
+    filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
+    border: 5px solid white; /* Adds a white border with 5px width */
+    background-size: cover; /* Ensures background image covers the entire area */
+    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
 }
 
-/*#reservation-form:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-}*/
 
-.login-container{
-    background-color: rgb(150, 207, 180);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #292929;
-    max-width: 700px;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: .7rem;
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
+
+/* Styles for login container */
+.login-container {
+    background-color: rgb(218, 240, 229); /* Sets background color */
+    justify-content: center; /* Centers content horizontally (applies to container) */
+    align-items: center; /* Centers content vertically (applies to container) */
+    text-align: center; /* Centers text */
+    border: 1px solid #292929; /* Adds a border with dark gray color */
+    max-width: 700px; /* Limits the maximum width to 700px */
+    border-radius: 10px; /* Rounds corners with a 10px radius */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: .7rem; /* Adds padding inside the container */
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow with slight blur */
+    filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
+    border: 5px solid white; /* Adds a white border with 5px width */
+    background-size: cover; /* Ensures background image covers the entire area */
+    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
 }
 
-/*#login-container:hover{
-    transform: translate3d(10px);
-    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1);
-    transform: scale(110%);
-    transition: 0.3s;
-}*/
 
-/* Footer */
+
+/* Styles for footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    /*display: flex;*/
+    background: #333; /* Sets background color */
+    color: #fff; /* Sets text color to white */
+    text-align: center; /* Centers text horizontally */
+    padding: 10px 0; /* Adds 10px padding top and bottom */
+    margin-top: 20px; /* Adds 20px margin above the footer */
+    background-color: #2C3E50; /* Sets a darker background color */
+    color: #fff; /* Sets text color to white */
+}
+
+/* Styles for footer container */
+.footer-container {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 0 20px; /* Adds 20px padding on left and right */
+}
+
+/* Styles for each section in the footer */
+.footer-section {
+    flex: 1; /* Allows each section to grow equally */
+    margin-right: 20px; /* Adds margin on the right of each section */
+}
+
+/* Styles for section headings in the footer */
+.footer-section h3 {
+    margin-bottom: 20px; /* Adds margin below headings */
+    font-size: 18px; /* Sets font size */
+}
+
+/* Styles for section paragraphs in the footer */
+.footer-section p {
+    line-height: 1.6; /* Increases line height for better readability */
+}
+
+/* Styles for unordered lists in the footer */
+.footer-section ul {
+    list-style: none; /* Removes default list styles */
+    padding: 0; /* Removes default padding */
+}
+
+/* Styles for list items in the footer */
+.footer-section ul li {
+    margin-bottom: 10px; /* Adds margin below each list item */
+}
+
+/* Styles for links in the footer */
+.footer-section ul li a {
+    color: #fff; /* Sets text color to white */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Hover effect for links in the footer */
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Styles for the bottom section of the footer */
+.footer-bottom {
+    text-align: center; /* Centers text horizontally */
+    padding: 10px; /* Adds 10px padding */
+    background-color: #1A252F; /* Sets background color */
+    margin-top: 20px; /* Adds margin above the footer-bottom section */
+}
+
+/* Styles for Font Awesome icons in the footer */
+.fa {
+    margin-right: 10px; /* Adds margin on the right of icons */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+    /* Styles for navigation menu on smaller screens */
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Stacks menu items vertically */
+        align-items: flex-start; /* Aligns items to the start */
     }
 
+    /* Styles for list items in navigation menu */
     ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adds margin above and below list items */
     }
 
+    /* Styles for service items on smaller screens */
     .service-item {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(50% - 20px); /* Sets the base width to 50% minus 20px */
     }
 
+    /* Styles for doctor grid on smaller screens */
     .doctor-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .logo-wrapper h1 {
-        font-size: 20px;
-    }
-    .logo {
-        display: flex;
-        width: 100px;
-        height: 100px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adapts grid layout based on screen size */
     }
 
+    /* Styles for logo wrapper on smaller screens */
+    .logo-wrapper h1 {
+        font-size: 20px; /* Reduces font size */
+    }
+
+    /* Styles for logo on smaller screens */
+    .logo {
+        display: flex; /* Uses flexbox layout */
+        width: 100px; /* Sets logo width */
+        height: 100px; /* Sets logo height */
+    }
 }
 
+
+/* Media query for screens up to 480px wide */
 @media screen and (max-width: 480px) {
+
+    /* Adjust font size for headings within the logo wrapper */
     .logo-wrapper h1 {
-        font-size: 20px;
+        font-size: 20px; /* Reduces font size for smaller screens */
     }
+
+    /* Adjust logo size */
     .logo {
-        display: flex;
-        width: 100px;
-        height: 70px;
+        display: flex; /* Uses flexbox layout */
+        width: 100px; /* Sets logo width */
+        height: 70px; /* Sets logo height */
     }
 
+    /* Stack navigation items vertically */
     nav {
-        flex-direction: column;
+        flex-direction: column; /* Aligns nav items vertically */
     }
+
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks menu items vertically */
+        align-items: center; /* Centers menu items horizontally */
     }
 
+    /* Adjust margin for navigation list items */
     ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adds margin above and below list items */
     }
 
-    .service-item {
-        flex-basis: 100%;
-    }
-
+    /* Adjust layout for doctor grid on smaller screens */
     .doctor-grid {
-       /*grid-template-columns: 1fr;*/
-       display: flex;
-       flex-direction: column;
+        display: flex; /* Uses flexbox layout */
+        flex-direction: column; /* Stacks items vertically */
     }
 
-    .branch{
-        margin: 0;
-        justify-content: center;
-        text-align: center;
+    /* Adjust layout for branch sections */
+    .branch {
+        margin: 0; /* Removes margin */
+        justify-content: center; /* Centers content horizontally */
+        text-align: center; /* Centers text */
+        align-items: center; /* Centers items vertically */
     }
 
-    .responsive-image {
-        max-width: 70%;
-        align-items: center;
-
-    }
-    .responsive-image03 {
-        max-width: 70%;
-        align-items: center;
+    /* Adjust map styling */
+    .map {
+        align-items: center; /* Centers items vertically */
+        max-width: 70%; /* Limits map width to 70% */
     }
 
+    /* Adjust responsive image styling */
+    .responsive-image, .responsive-image03 {
+        max-width: 70%; /* Limits image width to 70% */
+        align-items: center; /* Centers items vertically */
+    }
+
+    /* Adjust styling for service images */
     #service-images {
-        flex-direction: column;
-        align-items: center;
+        max-width: 100%; /* Limits service images width to 100% */
+        flex-direction: column; /* Stacks images vertically */
+        align-items: center; /* Centers images horizontally */
+        margin: 0; /* Removes margin */
     }
 
+    /* Adjust styling for service items */
     .service-item {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Sets flex basis to 100% to ensure items stack vertically */
     }
 
     .service-item img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ensures images fill container width */
+        height: auto; /* Maintains aspect ratio */
     }
 
-    /* Table adjustments */
+    /* Adjust table layout for small screens */
     table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0;
-    }
-    table th, table td {
-        padding: 10px;
-        font-size: 14px;
+        display: block; /* Changes table layout to block */
+        overflow-x: auto; /* Adds horizontal scroll if needed */
+        white-space: nowrap; /* Prevents table from breaking into multiple lines */
+        border: 1px solid #474747; /* Adds border to table */
+        background-color: aliceblue; /* Sets background color */
     }
 
+    /* Hide table headers on small screens */
     table thead {
-        font-size: 16px;
+        display: none; /* Hides table headers */
+    }
+
+    /* Adjust table rows for small screens */
+    table tbody tr {
+        display: block; /* Changes table row layout to block */
+        margin-bottom: 10px; /* Adds margin below each row */
+        border-bottom: 1px solid #3d3d3d; /* Adds border below rows */
+        position: relative; /* Allows for absolute positioning of table cells */
+    }
+
+    /* Adjust table cells for small screens */
+    table tbody td {
+        display: block; /* Changes table cell layout to block */
+        padding: 10px; /* Adds padding inside cells */
+        border: none; /* Removes border from cells */
+        position: relative; /* Allows for absolute positioning of pseudo-elements */
+        text-align: left; /* Aligns text to the left */
+    }
+
+    /* Adds labels before table cells */
+    table tbody td::before {
+        content: attr(data-label); /* Uses attribute data-label for cell label */
+        font-weight: bold; /* Makes label text bold */
+        position: absolute; /* Positions label absolutely */
+        left: 0; /* Aligns label to the left */
+        top: 0; /* Aligns label to the top */
+        padding: 10px; /* Adds padding to label */
+        white-space: nowrap; /* Prevents label from breaking into multiple lines */
+        background: #f4f4f4; /* Sets background color for label */
+        border-right: 1px solid #ddd; /* Adds border to the right of label */
+        color: #004080; /* Sets text color for label */
     }
 }
 
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+    /* Stack footer sections vertically and center text */
+    .footer-container {
+        flex-direction: column; /* Stacks footer sections vertically */
+        text-align: center; /* Centers text horizontally */
+    }
+
+    /* Adjust margin below each footer section */
+    .footer-section {
+        margin-bottom: 30px; /* Adds margin below each section */
+    }
+}
+
+/* Additional media query for screens up to 480px wide */
+@media (max-width: 480px) {
+    /* Adjust font size for footer section headings */
+    .footer-section h3 {
+        font-size: 16px; /* Reduces font size for headings */
+    }
+
+    /* Adjust font size for footer section paragraphs and links */
+    .footer-section p, .footer-section ul li a {
+        font-size: 14px; /* Reduces font size */
+    }
+}

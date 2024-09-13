@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy - Hospital</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icons for different devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
@@ -12,7 +14,7 @@
 </head>
 <body>
     <header>
-        
+        <!-- Navigation bar with logo and links -->
         <nav>
             <div class="logo-wrapper">
                 <a href="index.html" class="logo"></a>
@@ -29,12 +31,16 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Main section for the Pharmacy page -->
         <h1>Pharmacy</h1>
         <section id="pharmacy-form">
             <h2>Purchase Medicine</h2>
+            <!-- Form for ordering medicine -->
             <form action="#" method="post">
                 <label for="medicine">Select Medicine:</label>
+                <!-- Dropdown menu for selecting medicine -->
                 <select name="medicine" id="medicine" required>
                     <option value="med1">Medicine 01</option>
                     <option value="med2">Medicine 02</option>
@@ -42,18 +48,44 @@
                 </select>
 
                 <label for="quantity">Quantity:</label>
+                <!-- Input field for entering quantity -->
                 <input type="number" id="quantity" name="quantity" min="1" required>
 
-                <label for="address"> Delivery Address:</label>
+                <label for="address">Delivery Address:</label>
+                <!-- Textarea for entering delivery address -->
                 <textarea name="address" id="address" rows="3"></textarea>
 
+                <!-- Submit button to place the order -->
                 <button type="submit">Order Medicine</button>
             </form>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+        <!-- Footer section with hospital information and links -->
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a dedicated hospital providing top-notch healthcare services with a compassionate approach. Our team is here to ensure the best possible care for every patient.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +110 221 1227</p>
+                <p><i class="fa fa-envelope"></i> info@gothamhospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 230 Private Drive Colombo</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Patient Care</a></li>
+                    <li><a href="reservation.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Gotham Hospital. All rights reserved.</p>
     </footer>
     
 </body>

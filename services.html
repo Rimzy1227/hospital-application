@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Hospital</title>
+    <!-- Link to external CSS stylesheet for styling the page -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icons for different devices and browsers -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
-
 </head>
 <body>
     <header>
+        <!-- Navigation bar for the website -->
         <nav>
             <div class="logo-wrapper">
+                <!-- Placeholder for logo, currently commented out -->
                 <a href="index.html" class="logo">
                     <!--img src="Images/logo.png" alt="logo"-->
                 </a>
                 <h1>Gotham Hospital</h1>
             </div>  
             <ul>
+                <!-- List of navigation links -->
                 <li><a href="login.html">Login</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -33,30 +37,38 @@
     </header>
     
     <main>
+        <!-- Main content area for the Services page -->
         <h1>Our Services</h1>
-       <section id="service-intro">
-        <h2>Available Services</h2>
-        <p>At Vought Hospital, we offer a comprehensive range of healthcare services designed to meet the diverse needs of our patients. From primary care and preventive health services to advanced diagnostics, specialized surgeries, and rehabilitation, our multidisciplinary team is dedicated to providing top-notch care at every stage of your health journey. Our state-of-the-art facilities are equipped with the latest medical technology, ensuring that you receive the most accurate diagnosis and effective treatment possible. No matter the complexity of your condition, we are here to offer you compassionate, personalized care to help you achieve optimal health.</p></p>
-       </section>
-       <section id="service-images">
-        <div class="service-item">
-            <img src="Images/service01.jpeg" alt="Service 01" width="500" height="auto">
-        </div>
-        <!--div class="service-item">
-            <img src="Images/service02.jpg" alt="Service 02" width="500" height="auto">
-        </div-->
+        <section id="service-intro">
+            <h2>Available Services</h2>
+            <!-- Introduction to the services offered -->
+            <p>At Gotham Hospital, we offer a comprehensive range of healthcare services designed to meet the diverse needs of our patients. From primary care and preventive health services to advanced diagnostics, specialized surgeries, and rehabilitation, our multidisciplinary team is dedicated to providing top-notch care at every stage of your health journey. Our state-of-the-art facilities are equipped with the latest medical technology, ensuring that you receive the most accurate diagnosis and effective treatment possible. No matter the complexity of your condition, we are here to offer you compassionate, personalized care to help you achieve optimal health.</p>
+        </section>
+
+        <!-- Section for showcasing service images -->
+        <section id="service-images">
+            <div class="service-item">
+                <img src="Images/service01.jpeg" alt="Service 01" width="500" height="auto" class="service01">
+            </div>
+            <!-- Uncomment this div to display another service image -->
+            <!--div class="service-item">
+                <img src="Images/service02.jpg" alt="Service 02" width="500" height="auto">
+            </div-->
+        </section>
         
-        
+        <!-- Table listing various hospital medical services -->
         <table>
             <h1>Hospital Medical Services</h1>
             <thead>
                 <tr>
+                    <!-- Table headers -->
                     <th>Category</th>
                     <th>Description</th>
                     <th>Key Services</th>
                 </tr>
             </thead>
             <tbody>
+                <!-- Rows of medical services -->
                 <tr>
                     <td>Emergency Care</td>
                     <td>Immediate treatment for acute and life-threatening conditions.</td>
@@ -159,18 +171,39 @@
                 </tr>
             </tbody>
         </table>
-    
 
-
-       <section id="registration-link">
-        <a href="login.html">Register</a>
-       </section>
-
-       
+        <!-- Link to the registration page -->
+        <section id="registration-link">
+            <a href="login.html">Register</a>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+        <!-- Footer section with information and links -->
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a dedicated hospital providing top-notch healthcare services with a compassionate approach. Our team is here to ensure the best possible care for every patient.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +110 221 1227</p>
+                <p><i class="fa fa-envelope"></i> info@gothamhospital.com</p>
+                <p><i class="fa fa-map-marker"></i> 230 Private Drive Colombo</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <!-- List of quick links for easy navigation -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Patient Care</a></li>
+                    <li><a href="reservation.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Gotham Hospital. All rights reserved.</p>
     </footer>
     
 </body>

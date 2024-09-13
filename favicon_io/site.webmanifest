@@ -1,20 +1,25 @@
-{
-    "name": "Your App Name",
-    "short_name": "Short Name",
+
+  {
+    "name": "Vought Hospital",
+    "short_name": "Hospital",
+    "description": "A dedicated hospital providing top-notch healthcare services with a compassionate approach.",
     "icons": [
       {
-        "src": "../favicon_io/android-chrome-192x192.png",
+        "src": "/favicon_io/android-chrome-192x192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "../favicon_io/android-chrome-512x512.png",
+        "src": "/favicon_io/android-chrome-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
     ],
-    "theme_color": "#ffffff",
+    "start_url": "/index.html",
+    "display": "standalone",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "theme_color": "#2C3E50",
+    "orientation": "portrait-primary"
   }
+  
   
