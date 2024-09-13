@@ -471,10 +471,7 @@ table th {
     color: #dde2e0; /* Sets text color for th */
 }
 
-/* Alternating row colors for table body */
-table tbody tr:nth-child(even) {
-    background: #f4f4f4; /* Sets background color for even rows */
-}
+
 
 /* Styles for forms */
 form {
