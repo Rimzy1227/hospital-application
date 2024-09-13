@@ -471,7 +471,10 @@ table th {
     color: #dde2e0; /* Sets text color for th */
 }
 
-
+/* Alternating row colors for table body */
+table tbody tr:nth-child(even) {
+    background: #f4f4f4; /* Sets background color for even rows */
+}
 
 /* Styles for forms */
 form {
@@ -800,10 +803,10 @@ footer {
 
     /* Adjust table layout for small screens */
     table {
-        display: block; /* Changes table layout to block */
+        /*display: block; /* Changes table layout to block */
         overflow-x: auto; /* Adds horizontal scroll if needed */
         /*white-space: nowrap; /* Prevents table from breaking into multiple lines */
-        border: 1px solid #474747; /* Adds border to table */
+        /*border: 1px solid #474747; /* Adds border to table */
         background-color: aliceblue; /* Sets background color */
         block-size: auto
 
@@ -819,7 +822,7 @@ footer {
         display: block; /* Changes table row layout to block */
         margin-bottom: 10px; /* Adds margin below each row */
     
-        /*border-bottom : 1px solid #c4c2c2; /* Adds border below rows */
+        border-bottom : 1px solid #383737; /* Adds border below rows */
         position: relative; /* Allows for absolute positioning of table cells */
     }
 
@@ -827,7 +830,7 @@ footer {
     table tbody td {
         display: block; /* Changes table cell layout to block */
         padding: 10px; /* Adds padding inside cells */
-        border:none; /* Removes border from cells */
+        /*border: 1px solid #383737; /* Removes border from cells */
         position: relative; /* Allows for absolute positioning of pseudo-elements */
         text-align: center; /* Aligns text to the left */
         width: 100%;
