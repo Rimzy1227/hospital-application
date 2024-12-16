@@ -38,7 +38,7 @@ header {
     padding: 10px 0; /* Padding inside header */
     background-size: cover; /* Cover the entire header area with background image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
-    background-image: url(https://static.vecteezy.com/system/resources/previews/004/987/898/non_2x/doctor-in-medical-lab-coat-with-a-stethoscope-doctor-in-hospital-background-with-copy-space-low-poly-wireframe-vector.jpg); /* Header background image */
+    background-image: url(Images/headimage.jpg); /* Header background image */
 }
 
 nav {
@@ -148,7 +148,7 @@ main {
 .hero-container {
     position: relative; /* Relative positioning for overlay */
     height: 70vh; /* Height of hero section */
-    background-image: url(https://wallpapers.com/images/hd/cool-medical-and-health-symbols-yk9ofybop75souw0.jpg); /* Background image */
+    background-image: url(Images/Herobackgroundimage.jpg); /* Background image */
     background-size: cover; /* Cover the entire hero container */
     background-position: center; /* Center background image */
     display: flex; /* Flexbox for centering content */
