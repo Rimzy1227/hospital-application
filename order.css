@@ -4,7 +4,7 @@ body {
     padding: 0; /* Remove default padding */
     line-height: 1.6; /* Line height for readability */
     color: #333; /* Default text color */
-    background-color: #c6f5f5; /* Background color for the body */
+    background-color: #cbf0f0; /* Background color for the body */
 }
 
 a {
@@ -22,7 +22,7 @@ header {
     padding: 10px 0; /* Padding inside header */
     background-size: cover; /* Cover the entire header area with background image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
-    background-image: url(https://static.vecteezy.com/system/resources/previews/004/987/898/non_2x/doctor-in-medical-lab-coat-with-a-stethoscope-doctor-in-hospital-background-with-copy-space-low-poly-wireframe-vector.jpg); /* Header background image */
+    background-image: url(Images/headimage.webp); /* Header background image */
 }
 
 nav {
@@ -109,7 +109,7 @@ h2 {
 }
 
 .card {
-    background: #e6ebec; 
+    background: #fdfdfd; 
     border: 1px solid #0f0b0b; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 

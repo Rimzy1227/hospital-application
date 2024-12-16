@@ -38,7 +38,7 @@ header {
     padding: 10px 0; /* Padding inside header */
     background-size: cover; /* Cover the entire header area with background image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
-    background-image: url(Images/headimage.jpg); /* Header background image */
+    background-image: url(Images/headimage.webp); /* Header background image */
 }
 
 nav {
@@ -575,7 +575,7 @@ form button:hover {
     filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
     border: 5px solid white; /* Adds a white border with 5px width */
     background-size: cover; /* Ensures background image covers the entire area */
-    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
+    background-image: url(Images/formbacground.webp); /* Sets a background image */
 }
 
 
@@ -595,7 +595,7 @@ form button:hover {
     filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
     border: 5px solid white; /* Adds a white border with 5px width */
     background-size: cover; /* Ensures background image covers the entire area */
-    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
+    background-image: url(Images/formbacground.webp); /* Sets a background image */
 }
 
 
@@ -615,7 +615,7 @@ form button:hover {
     filter: drop-shadow(0 0 4px gray); /* Adds a drop shadow effect */
     border: 5px solid white; /* Adds a white border with 5px width */
     background-size: cover; /* Ensures background image covers the entire area */
-    background-image: url(https://png.pngtree.com/background/20211217/original/pngtree-health-care-gray-shading-cartoon-logo-picture-image_1591326.jpg); /* Sets a background image */
+    background-image: url(Images/formbacground.webp); /* Sets a background image */
 }
 
 
