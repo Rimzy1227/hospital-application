@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+    <main>
+        <section id="cart">
+            <h2>Review Your Items</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
+            <p id="totalPrice">Total Price: Rs.0</p>
+
+            <div class="payment-container">
+                <h2>Payment Method</h2>
+                <form id="payment-form">
+                    <label>
+                        <input type="radio" name="payment-method" value="card" checked onclick="togglePaymentMethod('card')">
+                        Card Payment
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="cod" onclick="togglePaymentMethod('cod')">
+                        Cash on Delivery (COD)
+                    </label>
+
+                    <div id="card-payment-fields">
+                        <label for="card-name">Cardholder Name:</label>
+                        <input type="text" id="card-name" name="card-name" required placeholder="John Doe">
+
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456" maxlength="19">
+
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY" maxlength="5">
+
+                        <label for="cvv">CVV:</label>
+                        <input type="password" id="cvv" name="cvv" required placeholder="123" maxlength="3">
+                    </div>
+
+                    <p id="cod-message" style="display: none;">Cash on Delivery is selected. Please ensure payment upon delivery.</p>
+        
+                    <button type="button" onclick="processPayment()">Pay Now</button>
+                </form>
+                <p id="message"></p>
+            </div>        
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gotham Hospital. All rights reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

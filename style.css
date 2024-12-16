@@ -14,7 +14,7 @@ h1 {
     text-align: center; /* Center align h1 text */
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
     margin: 10px 0; /* Margin for all heading elements */
 }
 
@@ -96,7 +96,7 @@ nav ul li a:hover {
     margin: auto; /* Center alignment on hover */
     border: 1px #3f3f3f; /* Border on hover */
     box-shadow: 5px 10px 15px rgba(36, 36, 36, 0.575); /* Shadow on hover */
-    transform: translate3d(15px); /* Shift position on hover */
+    transform: translate3d(15px, 0, 0); /* Shift position on hover */
     transition: 0.3s; /* Smooth transition */
     padding: 0.1rem; /* Padding on hover */
 }
@@ -161,9 +161,9 @@ main {
 }
 
 .hero-container:hover {
-    transform: translate3d(10px); /* Shift position on hover */
+    transform: translate3d(10px, 0, 0); /* Shift position on hover */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
-    transform: scale(110%); /* Scale up on hover */
+    transform: scale(1.1); /* Scale up on hover */
     transition: 0.3s; /* Smooth transition */
 }
 
@@ -181,9 +181,9 @@ main {
 }
 
 .hero-container::before:hover {
-    transform: translate3d(10px); /* Shift position on hover */
+    transform: translate3d(10px, 0, 0); /* Shift position on hover */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
-    transform: scale(110%); /* Scale up on hover */
+    transform: scale(1.1); /* Scale up on hover */
     transition: 0.3s; /* Smooth transition */
 }
 
@@ -266,9 +266,9 @@ footer p {
 
 /* Hover effect for the hero image */
 .hero-image:hover {
-    transform: translate3d(10px); /* Moves the image 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the image 10px to the right */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the image by 10% */
+    transform: scale(1.1); /* Scales up the image by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
 }
 
@@ -286,9 +286,9 @@ footer p {
 
 /* Hover effect for responsive images */
 .responsive-image:hover {
-    transform: translate3d(10px); /* Moves the image 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the image 10px to the right */
     box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the image by 10% */
+    transform: scale(1.1); /* Scales up the image by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
 }
 
@@ -306,9 +306,9 @@ footer p {
 
 /* Hover effect for the additional responsive image */
 .responsive-image03:hover {
-    transform: translate3d(10px); /* Moves the image 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the image 10px to the right */
     box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the image by 10% */
+    transform: scale(1.1); /* Scales up the image by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
 }
 
@@ -340,7 +340,7 @@ footer p {
 .map:hover {
     transform: translateY(-10px); /* Moves the map 10px up */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the map by 10% */
+    transform: scale(1.1); /* Scales up the map by 10% */
     transition: 0.4s; /* Smooth transition for hover effects */
 }
 
@@ -372,9 +372,9 @@ footer p {
 
 /* Hover effect for service images */
 .service01:hover {
-    transform: translate3d(10px); /* Moves the image 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the image 10px to the right */
     box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the image by 10% */
+    transform: scale(1.1); /* Scales up the image by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
 }
 
@@ -442,7 +442,7 @@ footer p {
 .doctor-card:hover {
     transform: translateY(-10px); /* Moves the card 10px up */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(125%); /* Scales up the card by 25% */
+    transform: scale(1.25); /* Scales up the card by 25% */
     transition: 0.5s; /* Smooth transition for hover effects */
 }
 
@@ -505,9 +505,9 @@ form input, form select, form textarea {
 
 /* Hover effects for form inputs, selects, and textareas */
 form input:hover, form select:hover, form textarea:hover {
-    transform: translate3d(10px); /* Moves the element 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the element 10px to the right */
     box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the element by 10% */
+    transform: scale(1.1); /* Scales up the element by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
     border: 1px solid black; /* Changes border color to black on hover */
 }
@@ -529,9 +529,9 @@ form button {
 /* Hover effect for form buttons */
 form button:hover {
     background-color: #2761ce; /* Changes background color on hover */
-    transform: translate3d(10px); /* Moves the button 10px to the right */
+    transform: translate3d(10px, 0, 0); /* Moves the button 10px to the right */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lightens the shadow on hover */
-    transform: scale(110%); /* Scales up the button by 10% */
+    transform: scale(1.1); /* Scales up the button by 10% */
     transition: 0.3s; /* Smooth transition for hover effects */
 }
 

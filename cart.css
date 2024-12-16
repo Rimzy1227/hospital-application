@@ -1,0 +1,265 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+}
+main h2 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+}
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #264653;
+}
+
+/* Cart table styling */
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cartTable thead {
+    background-color: #2a9d8f;
+    color: #fff;
+}
+
+#cartTable th,
+#cartTable td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#cartTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Total price styling */
+#totalPrice {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e76f51;
+}
+
+/* Payment form styling */
+.payment-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.payment-container h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2a9d8f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #2a9d8f;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #21867a;
+}
+
+/* Checkout button styling */
+#checkout {
+    width: 100%;
+    background-color: #e76f51;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#checkout:hover {
+    background-color: #c55440;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+/* Radio buttons */
+.payment-container form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.payment-container form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Dynamic sections */
+#card-payment-fields {
+    margin-top: 15px;
+}
+
+#cod-message {
+    font-style: italic;
+    color: #e76f51;
+    margin-top: 15px;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #cartTable th, #cartTable td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #totalPrice {
+        font-size: 1rem;
+    }
+
+    .payment-container {
+        padding: 15px;
+    }
+
+    form input {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+
+    #checkout {
+        font-size: 0.9rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #cartTable th, #cartTable td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    #totalPrice {
+        font-size: 0.9rem;
+    }
+
+    .payment-container {
+        padding: 10px;
+    }
+
+    form input {
+        font-size: 0.8rem;
+    }
+
+    form button {
+        font-size: 0.8rem;
+    }
+
+    #checkout {
+        font-size: 0.8rem;
+    }
+
+    /* Stack radio buttons vertically */
+    .payment-container form input[type="radio"] {
+        margin-bottom: 5px;
+    }
+}
+
